@@ -310,6 +310,11 @@
 						"internalType": "string[]",
 						"name": "",
 						"type": "string[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
 					}
 				],
 				"stateMutability": "view",
@@ -433,11 +438,11 @@
 	},
 	"sources": {
 		"src/votingMachine.sol": {
-			"keccak256": "0x9e8ed871205eaaf5814bd05bcf94b0124ec9b03601be58bd94a2ae4d7b4e5d21",
+			"keccak256": "0x6580406f260812f28cf8f6f1e143e72a048eac1adbb2fc9662b587014ac8209b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ac0da2519fb8b6f5ecf467726b354e84f31d86e6d9aa484884ace9278d9037ba",
-				"dweb:/ipfs/QmTVhR56yzPZkpLgyok4ZVoJHuwNupZQy6pyvWJZbcHoQt"
+				"bzz-raw://bcb92e05d164511b4f0c99981c6d079f9c4334404e469060417bf76e4962ff22",
+				"dweb:/ipfs/QmaHTmVRJbFyNJsiPhoQwYmp2KCV5HT1rVySjrSDvAMzbf"
 			]
 		}
 	},

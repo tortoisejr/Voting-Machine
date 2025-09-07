@@ -163,17 +163,19 @@ contract booth {
         return (electionId,Name);
     }
 
-    function getCandidates(uint _electionId) public view electionExists(_electionId) returns(uint [] memory, string [] memory)
+    function getCandidates(uint _electionId) public view electionExists(_electionId) returns(uint [] memory, string [] memory, uint [] memory)
     {
         require(elections[_electionId].candidateCount>0,"There is no candidates for this election");
         uint [] memory candidateId= new uint[](elections[_electionId].candidateCount);
         string [] memory Name= new string [](elections[_electionId].candidateCount);
+        uint [] memory Vote = new uint [] (elections[_electionId].candidateCount);
         for(uint i=0;i<elections[_electionId].candidateCount;i++)
         {
             candidateId[i] =i+1;
             Name[i]= elections[_electionId].candidates[i+1].name;
+            Vote[i]= elections[_electionId].candidates[i+1].voteCount;
         }
-        return (candidateId,Name);
+        return (candidateId,Name,Vote);
     }
 
 }
